@@ -22,5 +22,5 @@ def save_canvas():
         print(f"[ERROR] Failed to process payload: {str(e)}")
         return jsonify({"error": "Internal server error"}), 500
 
-if __name__ == '__main__': #tablet can run on the laptop's IP locally
+if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
