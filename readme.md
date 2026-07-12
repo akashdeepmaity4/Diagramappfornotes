@@ -28,7 +28,7 @@ python backend.py
 
 ### OR
 
-3. open browser on your tablet / second device and type "http://192.168.1.2:5000" if you want to draw from your tablet / second device.
+3. open browser on your tablet / second device and type your WIFI's IP address if you want to draw from your tablet / second device.
 
 ## DISCLAIMER
 Both must be on the same WIFI network for it to work
