@@ -12,7 +12,7 @@ def save_canvas():
     try:
         payload = request.get_json()
         if not payload:
-            return jsonify({"error": "No data received"}), 400
+            return jsonify({"error": "No data received"}), 400 #i have saved it as json to reduce padload size
 
         saved_path = save_payload_as_png(payload)
 
