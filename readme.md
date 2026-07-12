@@ -1,6 +1,6 @@
 # DIAGRAM PLOTTER FOR NOTES
 
-### This program can help you draw diagrams on you laptop during meetings, classes, or just for fun! I made this because i cannot find a good penpad for my budget and i need to make diagrams in my notes. 
+### This program can help you draw diagrams on you laptop during meetings, classes, or just for fun! I made this because i cannot find a good penpad for my budget and i need to make diagrams in my school notes. 
 
 ## Walkthrough
 
