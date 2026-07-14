@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, jsonify
-from utilities.exporter import save_payload_as_png
+from utilities.exporter import make_img
 
 app = Flask(__name__)
 
@@ -14,7 +14,7 @@ def save_canvas():
         if not payload:
             return jsonify({"error": "No data received"}), 400 
 
-        saved_path = save_payload_as_png(payload)
+        saved_path = make_img(payload)
 
         return jsonify({"status": "success", "path": saved_path}), 200
 

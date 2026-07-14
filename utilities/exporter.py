@@ -2,7 +2,7 @@ import os
 import time
 from PIL import Image, ImageDraw
 
-def save_payload_as_png(payload, output_dir="noteimg"):
+def make_img(payload, output_dir="noteimg"):
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
 
@@ -24,8 +24,9 @@ def save_payload_as_png(payload, output_dir="noteimg"):
         elif len(coord_tuples) == 1:
             x, y = coord_tuples[0]
             draw.ellipse([x-2, y-2, x+2, y+2], fill=color)
-
-#make timestamps to ovoid overwriting files
+        else: 
+            pass
+#make timestamp
     timestamp = int(time.time())
     filename = f"note_{timestamp}.png"
     filepath = os.path.join(output_dir, filename)
