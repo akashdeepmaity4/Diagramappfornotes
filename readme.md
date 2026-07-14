@@ -18,6 +18,7 @@
 ## How to run
 1. install dependencies
 ```
+#to install all dependencies at once
 pip install -r requirements.txt
 ```
 2. run the main file on your laptop
