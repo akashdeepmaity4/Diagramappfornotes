@@ -25,7 +25,7 @@ pip install -r requirements.txt
 ```
 python backend.py
 ```
-3. open browser on your laptop and type "http://localhost:5000" if you want to draw from your laptop. 
+3. open browser on your laptop and go to localhost server if you want to draw from your laptop. 
 
 ### OR
 
