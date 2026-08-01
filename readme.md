@@ -1,6 +1,5 @@
 # DIAGRAM PLOTTER FOR NOTES
 
-### TEMPORARY NOTE: .EXE application support coming soon
 
 ### This program can help you draw diagrams on you laptop/PC even without a native touchscreen support, whether during meetings, classes, or just for fun! I made this because i cannot find a good penpad under my budget and i need to make diagrams in my school notes, which i take primarily on my touch-less laptop. 
 
