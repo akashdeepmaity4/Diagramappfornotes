@@ -1,6 +1,5 @@
 # DIAGRAM PLOTTER FOR NOTES
 
-### TEMPORARY NOTE: .EXE application support coming soon
 
 ### This program can help you draw diagrams on you laptop/PC even without a native touchscreen support, whether during meetings, classes, or just for fun! I made this because i cannot find a good penpad under my budget and i need to make diagrams in my school notes, which i take primarily on my touch-less laptop. 
 
@@ -33,5 +32,9 @@ python backend.py
 
 3. Open browser on your tablet / second device and type your wifi-router's IP address if you want to draw from your tablet / second device.
 
+
+## OR 
+
+- Download the .exe file and directly run it on your host device. Then go to localhost server if you want to use a second device. Draw on the executable's canvas if you want to draw from your host device.
 ## DISCLAIMER
 BOTH DEVICES MUST BE ON THE SAME WIFI NETWORK FOR THIS SCRIPT TO WORK
