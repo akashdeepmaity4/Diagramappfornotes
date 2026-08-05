@@ -60,6 +60,7 @@ button {
 
 #clearBtn:hover {
     background-color: #c0392b;
+    scale: 1.05;
 }
 
 #saveBtn {
@@ -69,6 +70,7 @@ button {
 
 #saveBtn:hover {
     background-color: #27ae60;
+    scale: 1.05;
 }
 
 #paintCanvas {
