@@ -2,6 +2,7 @@ noteimg/
 __pycache__/
 *.pyc
 *.exe
+*.log
 
 *.spec
 dist/
