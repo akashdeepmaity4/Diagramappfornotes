@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NOTES POLOTTER</title>
+    <title>@akashdeepmaity4</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
+
 <body>
 
     <div id="controls">
         <label for="colorPicker">Brush Color:</label>
         <input type="color" id="colorPicker" value="#000000">
-        
+
         <button id="clearBtn">Clear</button>
-        <button id="saveBtn">Save to Laptop</button>
+        <button id="saveBtn">Save</button>
     </div>
 
     <canvas id="paintCanvas"></canvas>
 
     <script src="{{ url_for('static', filename='canvas.js') }}"></script>
 </body>
+
 </html>

@@ -1,11 +1,10 @@
-import sys
-import os
-import re
-from flask import Flask, render_template, request, jsonify
-
 import os
 import time
 from PIL import Image, ImageDraw
+import sys
+import re
+from flask import Flask, render_template, request, jsonify, url_for
+
 
 def make_img(payload, output_dir="noteimg"):
     if not os.path.exists(output_dir):
@@ -29,7 +28,7 @@ def make_img(payload, output_dir="noteimg"):
         elif len(coord_tuples) == 1:
             x, y = coord_tuples[0]
             draw.ellipse([x-2, y-2, x+2, y+2], fill=color)
-        else: 
+        else:
             pass
     timestamp = int(time.time())
     filename = f"note_{timestamp}.png"
@@ -69,6 +68,7 @@ if not os.path.exists(STORAGE_DIR):
 
 
 @app.route('/')
+
 def index():
     return render_template('index.html')
 
@@ -79,12 +79,13 @@ def save_canvas():
         if not payload:
             return jsonify({"error": "No data received"}), 400
 
-        saved_path = make_img(payload, output_dir=STORAGE_DIR) 
+        saved_path = make_img(payload, output_dir=STORAGE_DIR)
         return jsonify({"status": "success", "path": saved_path}), 200
 
     except Exception as e:
         print(f"[ERROR] Failed to process payload: {str(e)}")
         return jsonify({"error": "Internal server error"}), 500
-        
 
-# -DISCLAIMER--------- DO NOT run with debug=True here ----------
+
+if __name__ == '__main__':
+    app.run(host='127.0.0.1', port=5000, debug=False)
