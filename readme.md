@@ -1,6 +1,5 @@
 # DIAGRAM PLOTTER FOR NOTES
 
-
 ### This program can help you draw diagrams on you laptop/PC even without a native touchscreen support, whether during meetings, classes, or just for fun! I made this because i cannot find a good penpad under my budget and i need to make diagrams in my school notes, which i take primarily on my touch-less laptop. 
 
 ## Walkthrough
@@ -12,7 +11,7 @@
 
 ## Dependencies
 
-1. Python 3.x
+1. Python 3.x (Python 3.13 Above recommended)
 1. Flask 
 1. Pillow
 
